@@ -3,16 +3,20 @@
  <head>
  <meta charset="utf-8">
  <title>Current time</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
  <body>
     <div class="container">
-
-        <!-- <%=data.item1.name%> -->
-        <%for(let element in data){%>
+        <%for(const element in data){%>
             <div class="element" >
-                <h1><%=data.element.name%></h1>
-                <h5><%=data.element.price%></h5>
-                <p><%=data.element.description%></p>
+                <form action="/addToCart" method="post">
+                    <input name="id" value="<%=element%>"></input>
+                    <h1><%=data[element].name%></h1>
+                    <h5><%=data[element].price%></h5>
+                    <p><%=data[element].description%></p>
+                    <input type="submit" value="Submit"></input>
+                </form>
             </div>
         <%}%>
     </div>

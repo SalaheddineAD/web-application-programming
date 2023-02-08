@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html lang='en'>
+
+<head>
+ <meta charset="utf-8">
+ <title>Current time</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+ <body>
+    <div class="container">
+        <%for(const element of products_added){%>
+            <div class="element" >
+                <h1><%=element.name%></h1>
+                <h5><%=element.price%></h5>
+                <p><%=element.description%></p>
+            </div>
+        <%}%>
+    </div>
+    <p><a href="/">back To Shopping</a></p>
+    
+
+
+    
+ </body>
+</html>
