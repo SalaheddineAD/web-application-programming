@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html lang='en'>
+ <head>
+ <meta charset="utf-8">
+ <title>Current time</title>
+</head>
+ <body>
+    <div class="container">
+
+        <!-- <%=data.item1.name%> -->
+        <%for(let element in data){%>
+            <div class="element" >
+                <h1><%=data.element.name%></h1>
+                <h5><%=data.element.price%></h5>
+                <p><%=data.element.description%></p>
+            </div>
+        <%}%>
+    </div>
+
+    
+ </body>
+</html>
